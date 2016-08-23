@@ -83,7 +83,7 @@ var app = {
 function RegistrarDispositivo(ID_device)
 {
 	$.post('http://192.168.1.35/prueba_notificacion/grabar_id.php',{ 	
-		d_device: ID_device,
+		Id_device: ID_device,
 	}, 
 	function(response) {
 		alert(response);
