@@ -79,3 +79,14 @@ var app = {
         console.log('Received Event: ' + id);
     }
 };
+function RegistrarDispositivo(ID_device)
+{
+	$.post('http://192.168.1.35/prueba_notificacion/grabar_id.php',{ 	
+		d_device: ID_device,
+	}, 
+	function(response) {
+		alert(response);
+	}).done(function(response) {
+		
+	});
+}
