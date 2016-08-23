@@ -36,10 +36,10 @@ var app = {
         app.receivedEvent('deviceready');
 		var push = PushNotification.init({
 			android: {
-				senderID: "964841478681"
-			},
-			browser: {
-				pushServiceURL: 'http://push.api.phonegap.com/v1/push'
+				senderID: "964841478681",
+				sound: true, 
+                forceShow: true,
+                vibrate: true,
 			},
 			ios: {
 				alert: "true",
@@ -52,6 +52,7 @@ var app = {
 		push.on('registration', function(data) {
 			// data.registrationI
 			alert(''+data.registrationId);
+			RegistrarDispositivo(data.registrationId);
 		});
 
 		push.on('notification', function(data) {
