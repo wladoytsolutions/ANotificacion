@@ -82,6 +82,7 @@ var app = {
 };
 function RegistrarDispositivo(ID_device)
 {
+	/**
 	$.post('http://192.168.1.35/prueba_notificacion/grabar_id.php',{ 	
 		Id_device: ID_device,
 	}, 
@@ -90,4 +91,5 @@ function RegistrarDispositivo(ID_device)
 	}).done(function(response) {
 		
 	});
+	*/
 }
