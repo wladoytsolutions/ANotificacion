@@ -34,6 +34,7 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+		/**
 		var push = PushNotification.init({
 			android: {
 				senderID: "964841478681",
@@ -67,6 +68,7 @@ var app = {
 		push.on('error', function(e) {
 			// e.message
 		});
+		*/
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
